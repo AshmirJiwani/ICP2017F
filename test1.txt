@@ -1,1 +1,1 @@
-test1 branch text
+This is some example text for branch test2
