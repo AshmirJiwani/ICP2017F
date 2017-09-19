@@ -1,4 +1,5 @@
-Homework 1 answers  
+Homework 1 answers
+  
 A)  
 ```bash
 git branch test1
@@ -136,8 +137,7 @@ $ git branch
   test2
 
 ```  
-Q)  
-You cannot delete test2 from test1, you can only delete those branches from the master branch.  
+Q)You cannot delete test2 from test1, you can only delete those branches from the master branch.  
 R)  
 ```bash
 $ git checkout test2
