@@ -67,7 +67,7 @@ Auto-merging homework/1/test2.txt
 CONFLICT (add/add): Merge conflict in homework/1/test2.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```   
-Error arises because both branch have same text file names.  
+Error arises because both branches have the same text file names.  
 K)  
 ```bash
 $ git checkout test2
@@ -90,7 +90,7 @@ Unmerged paths:
 
         both added:      test2.txt
 ```
-Both branches have a text file named test2.txt
+Both branches have a text file named test2.txt  
 M)  
 ```bash
 $ vim test2.txt
@@ -135,7 +135,7 @@ $ git branch
 * master
   test2
 
-```
+```  
 Q)  
 You cannot delete test2 from test1, you can only delete those branches from the master branch.  
 R)  
