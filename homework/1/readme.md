@@ -32,7 +32,7 @@ Switched to branch 'test2'
 $ ls
 readme.md
 ```   
-I do not see the test.txt in the homework/1/ directory for the test2 branch because I switched from branch test1 to branch test2. 
+I do not see the test.txt in the homework/1/ directory for the test2 branch because I switched from branch test1 to branch test2.  
 F)
 ```bash
 $ vim test2.txt
@@ -67,7 +67,7 @@ Auto-merging homework/1/test2.txt
 CONFLICT (add/add): Merge conflict in homework/1/test2.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```   
-Error arises because both branch have same text file names.
+Error arises because both branch have same text file names.  
 K)  
 ```bash
 $ git checkout test2
