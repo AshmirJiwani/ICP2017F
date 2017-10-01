@@ -121,8 +121,7 @@ Order of operations first divides the 6 by the 2 then subtracts the quotient fro
 ans =
     30
 ```
-This function works the operations from left to right.  
-4)  
+This function works the operations from left to right.   
 4a)  
 ```bash
 >> a = [1,0;2,1]
@@ -142,7 +141,7 @@ d =
      5
 ```
   
-4b) 
+4b)  
 1.  
 ```bash
 >> a + b
