@@ -51,3 +51,23 @@ h =
   h         1x4               491  cell   
 
 ```
+2)  
+```bash
+>> int16(intmin)
+ans =
+  int16
+   -32768
+>> int16(intmax)
+ans =
+  int16
+   32767
+>> int32(intmin)
+ans =
+  int32
+   -2147483648
+>> int32(intmax)
+ans =
+  int32
+   2147483647
+
+```
