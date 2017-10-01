@@ -71,3 +71,53 @@ ans =
    2147483647
 
 ```
+3)  
+```bash
+>> 1\2
+ans =
+     2
+```
+The backslash function divides the second number by the first number. 
+```bash
+>> 1/2
+ans =
+    0.5000
+```
+The forward-slash function divides the frist number by the second number.
+```bash
+>> int8(1/2)
+ans =
+  int8
+   1
+```
+The int8 function finds the integer value from -128 to 127 so it rounds 0.5 to 1
+```bash
+>> int8(1/3)
+ans =
+  int8
+   0
+```
+The int8 function finds the integer value from -128 to 127 so it rounds 0.333 to 0
+```bash
+>> -5^2
+ans =
+   -25
+```
+The exponent multiplies the 5's together then adds a negative sign in front of the product
+```bash
+>> (-5) ^ 2
+ans =
+    25
+```
+The parenthesis allows the two -5's to be multiplied to with each other
+```bash
+>> 10-6/2
+ans =
+     7
+```
+Order of operations first divides the 6 by the 2 then subtracts the quotient from 10
+```bash
+>> 5*4/2*3
+ans =
+    30
+```
