@@ -121,4 +121,89 @@ Order of operations first divides the 6 by the 2 then subtracts the quotient fro
 ans =
     30
 ```
-This function works the operations from left to right.
+This function works the operations from left to right.  
+4)  
+4a)  
+```bash
+>> a = [1,0;2,1]
+a =
+     1     0
+     2     1
+>> b = [-1,2;0,1]
+b =
+    -1     2
+     0     1
+>> c = [3;2]
+c =
+     3
+     2
+>> d = [5]
+d =
+     5
+```
+  
+4b) 
+1.  
+```bash
+>> a + b
+ans =
+     0     2
+     2     2
+```
+MATLAB is adding matrices A and B together  
+2.  
+```bash
+>> a .* b
+ans =
+    -1     0
+     0     1
+```
+MATLAB multiplies the matrcies as a point-wise product  
+3.  
+```bash
+>> a * b
+ans =
+    -1     2
+    -2     5
+```
+MATLAB multiplies matrices A and B together  
+4.  
+```bash
+>> a * c
+ans =
+     3
+     8
+```
+MATLAB multiplies matrices A and C together  
+5.  
+```bash
+>> a + c
+ans =
+     4     3
+     4     3
+```
+MATLAB adds matrices A and C together  
+6.  
+```bash
+>> a + d
+ans =
+     6     5
+     7     6
+```
+MATLAB adds matrices A and D together  
+7.  
+```bash
+>> a .* d
+ans =
+     5     0
+    10     5
+```
+MATLAB multiplies matrices A and D together as a point-wise product  
+8.  
+```bash
+>> a * d
+ans =
+     5     0
+    10     5
+```
+MATLAB multiplies matrices A and D together  
