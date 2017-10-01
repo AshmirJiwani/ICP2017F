@@ -121,3 +121,4 @@ Order of operations first divides the 6 by the 2 then subtracts the quotient fro
 ans =
     30
 ```
+This function works the operations from left to right.
