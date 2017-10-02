@@ -51,7 +51,7 @@ h =
   h         1x4               491  cell   
 
 ```
-2)  
+2)   
 ```bash
 >> int16(intmin)
 ans =
