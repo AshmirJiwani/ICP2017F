@@ -308,3 +308,23 @@ Need to remove semicolon and use braces instead of bracket so that values will s
 disp([Persian 'is not the same as' Spanish(:)]);
 ```
 Need to call upon indexes of the arrays.  
+```
+7)  
+```bash
+>> mkdir mynewdir
+>> cd mynewdir
+>> edit mynewdir/myscript.m
+On script:
+x = -2*pi:pi/20:2*pi;
+y = abs(sin(x));
+plot(x,y);
+>> myscript
+```
+  
+8)  
+```bash
+cd ..
+>> myscript
+Undefined function or variable 'myscript'.
+```
+This error occurs because the script called myscript is not in the current working directory I am on. MATLAB does not know where to track the script in order to run it.  
