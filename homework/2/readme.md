@@ -235,47 +235,74 @@ ans =
 ```
 6)  
 1- ```bash 
-1a = 2; ```
+1a = 2;
+```
 Error occurs because a variable cannot be define where a number stands before a letter.  
-4- ```bash 
-y = X + 4; ```
+4-  
+```bash 
+y = X + 4; 
+```
 Error occurs because X is not a variable, while x is.  
-5- ```bash 
-pi = 4 *; atan(1);```
-Error occurs because *;* is not a function.  
-8- ```bash 
+5-   
+```bash 
+pi = 4 *,* atan(1);```
+Error occurs because *;* is not a function. 
+8- 
+```bash 
 disp(tan(pi));```
 You must set tan(pi) to a new variable and then display the new variable.  
-10- ```bash 
-_ = ((c-78564)/c + 32));```
+10- 
+```bash 
+_ = ((c-78564)/c + 32));
+```
 A variable must be define for this line.  
-12- ```bash 
-disp(['The year is ' year]); ```
+12- 
+```bash 
+disp(['The year is ' year]); 
+```
 Cannot display number with a string so you must use the num2str function to change 2017 to display as a string.  
-13- ```bash 
-stuff = {'a' 'b' 4 21 'c'};```
+13- 
+```bash 
+stuff = {'a' 'b' 4 21 'c'};
+```
 Must change all indexes in this mastrix to string values.  
-14- ```bash 
-beginning = stuff(0);```
+14- 
+```bash 
+beginning = stuff(0);
+```
 Error occurs because 0 is not the first index. The first index of a matrix is always 1.  
-16- ```bash 
-discount = 12%;```
+16- 
+```bash 
+discount = 12%;
+```
 The variable discount must be changed to a string.  
-17- ```bash 
-AMOUNT = 120.-;```
+17- 
+```bash 
+AMOUNT = 120.-;
+```
 AMOUNT needs to be set as an integer value.  
-18- ```bash 
-amount = 120$;```
+18- 
+```bash 
+amount = 120$;
+```
 amount needs to be stored as a string.  
-19- ```bash 
-and = duck;```
+19- 
+```bash 
+and = duck;
+```
 variable and needs to set as "duck".  
-20- ```bash 
-class = 'INF1100, gr 2";```
+20- 
+```bash 
+class = 'INF1100, gr 2";
+```
 Need to use either "" or '' together. A combination of both results in error.  
-24- ```bash 
-Persian = ['Persian';' is ' 'a',' human ' 'language'];```
+24- 
+```bash 
+Persian = ['Persian';' is ' 'a',' human ' 'language'];
+```
 Need to remove semicolon and use braces instead of bracket so that values will seen as full strings when called upon.  
-26- ```bash 
-disp([Persian 'is not the same as' Spanish(:)]);```
+26- 
+```bash 
+disp([Persian 'is not the same as' Spanish(:)]);
+```
 Need to call upon indexes of the arrays.  
