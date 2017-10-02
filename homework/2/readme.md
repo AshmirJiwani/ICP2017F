@@ -350,7 +350,9 @@ x = -2*pi:pi/20:2*pi;
 y = abs(sin(x));
 plot(x,y);
 >> myscript
-```
+```  
+  
+![Figure](https://raw.githubusercontent.com/AshmirJiwani/ICP2017F/master/homework/2/Homework%202%20Figure%20(2).jpg?token=AeFPXhr39Z53D9KmCrIjA_myV8r6S85oks5Z24LnwA%3D%3D)  
 8)  
 ```bash
 cd ..
