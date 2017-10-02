@@ -247,7 +247,7 @@ Error occurs because X is not a variable, while x is.
 ```bash
 pi = 4 () atan(1);
 ```
-Error occurs because the function isnt a function is MATLAB.
+Error occurs because the function isnt a function is MATLAB.  
 8- 
 ```bash 
 disp(tan(pi));
