@@ -206,3 +206,30 @@ ans =
     10     5
 ```
 MATLAB multiplies matrices A and D together  
+5)  
+Method 1: diag() function  
+```bash
+a =
+     2     2     2
+>> diag(a)
+ans =
+     2     0     0
+     0     2     0
+     0     0     2
+```
+Method 2: eye() Function  
+```bash
+>> A = 2 * eye(3)
+A =
+     2     0     0
+     0     2     0
+     0     0     2
+```
+Method 3: zeros function
+```bash
+>> zeros(3) + diag(a)
+ans =
+     2     0     0
+     0     2     0
+     0     0     2
+```
