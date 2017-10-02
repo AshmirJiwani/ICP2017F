@@ -335,9 +335,9 @@ class = 'INF1100, gr 2';
 continue_ = x > 0;
 fox = false;
 wolf = fox == true;
-Persian = {'Persian' ' is ' 'a' ' human ' 'language'};
+Persian = ['Persian' ' is ' 'a' ' human ' 'language'];
 Spanish = {'Spanish ' 'is ' ' another' 'language'};
-f = [Persian{1} ' ' 'is not the same as' ' ' Spanish{1}];
+f = [Persian(1:7) ' ' 'is not the same as' ' ' Spanish{1}];
 disp(f);
 ```
 7)  
