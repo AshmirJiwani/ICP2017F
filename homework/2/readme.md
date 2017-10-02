@@ -309,6 +309,37 @@ Line 26-
 disp([Persian 'is not the same as' Spanish(:)]);
 ```
 Need to call upon indexes of the arrays.  
+Corrected code:  
+```bash
+a = 2;
+b = 1;
+x = 2;
+y = x + 4;
+pi = 4 * atan(1);
+disp(pi);
+pi == '3.14159';
+p = tan(pi);
+disp(p);
+c = (4)^(3)^(2)^(3);
+d1 = ((c-78564)/(c + 32));
+year = 2017;
+disp(['The year is ' num2str(year) '.']); 
+stuff = {'a' 'b' '4' '21' 'c'};
+Beginning = stuff(1);
+End = stuff(5);
+discount = '12 %%';
+AMOUNT = 120;
+amount = '120$';
+and = 'duck';
+class = 'INF1100, gr 2';
+continue_ = x > 0;
+fox = false;
+wolf = fox == true;
+Persian = {'Persian' ' is ' 'a' ' human ' 'language'};
+Spanish = {'Spanish ' 'is ' ' another' 'language'};
+f = [Persian{1} ' ' 'is not the same as' ' ' Spanish{1}];
+disp(f);
+```
 7)  
 ```bash
 >> mkdir mynewdir
@@ -319,8 +350,7 @@ x = -2*pi:pi/20:2*pi;
 y = abs(sin(x));
 plot(x,y);
 >> myscript
-```  
-
+```
 8)  
 ```bash
 cd ..
