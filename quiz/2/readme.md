@@ -9,10 +9,9 @@ Quiz 2 Answers
 5) Assembly Language  
 6) C  
 7) C++  
-8) ```bash
-   c = (2,2)  
+8) c = (2,2)  
    c = {([1,3,-7;2,0,6;0,5,1]),'This is a text string.';[],[3+4i,-5;-10i,3-4i]}   
-   ```
+
 9) Output: [] You get this because you call the cell array with the second index of the cell array since MATLAB searches for the index by going down the columns.    
 10) Column-wise storage. It jumps from column to column when getting indexes of data. It follows this method because it is much faster.  
 11) 512 bytes  
