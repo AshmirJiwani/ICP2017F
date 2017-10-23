@@ -4,7 +4,7 @@ A = [1,2,3];
 B = [4,5,6];   
 A*B would result in error because the dimensions do not match while A.*B would multiply the elements by each other and make a new vector such as: 4,10,18  
 2) The simplest way to get the result of the dot product of two vectors is to use the element wise multiplier: A.*B  
-3) A) ```bash
+3) A)
    function x = testString(string)
 	string = input('Please enter a string: ')
 	if(string == 'MATLAB')
@@ -12,9 +12,9 @@ A*B would result in error because the dimensions do not match while A.*B would m
 	else
 		x = false;
 	end
-  ```
+
    B) The other way of comparing strings is using the function isequal(). The difference between these two operators is that the == operator compares each char of the first string with each char of the second string, while the isequal() operator compares the ASCII values of the two strings with each other. The following code with result as the value of z being the value of true since x and y are the same exact string.   
-	```bash
+
   x = 'MATLAB'
 	y = 'MATLAB'
 	z = true;
@@ -25,7 +25,7 @@ A*B would result in error because the dimensions do not match while A.*B would m
 	else
 	z = false;
 	end
-  ```
+
 4) The | and || operators are the boolean OR operators. The difference between | and || is that the || is a short circuit which provides code efficiency while the | operator is used to operate on logical vectors and scalars.  
 5)The simplest change to the logical expression x = a/b)10.0 would be x = a\b>10.0  
 6) The first respresentation would be more effecient since the data would be easier/quicker to find and compute.  
@@ -34,13 +34,12 @@ A*B would result in error because the dimensions do not match while A.*B would m
    b = 1;
    c = 1;
    x = sqrt(a*x.^2 + b*x + c)
-8) ```bash
+8)
    a = 1;
    b = 1;
    c = 1;
    function g(c) = @(c) integral(x.^2 + c*x + 1,a,b)
-   ```
-9)      function y = getFac(x)  
+9)   function y = getFac(x)  
 	x = input('Please enter an integer:')  
 	if(x > 0)  
 	
