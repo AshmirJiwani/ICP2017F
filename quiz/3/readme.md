@@ -29,18 +29,20 @@ A*B would result in error because the dimensions do not match while A.*B would m
 4) The | and || operators are the boolean OR operators. The difference between | and || is that the || is a short circuit which provides code efficiency while the | operator is used to operate on logical vectors and scalars.  
 5)The simplest change to the logical expression x = a/b)10.0 would be x = a\b>10.0  
 6) The first respresentation would be more effecient since the data would be easier/quicker to find and compute.  
-7) ```bash
+7) function x = getRoot()
+   a = 1;
+   b = 1;
+   c = 1;
+   x = sqrt(a*x.^2 + b*x + c)
+8) ```bash
    a = 1;
    b = 1;
    c = 1;
    function g(c) = @(c) integral(x.^2 + c*x + 1,a,b)
    ```
-8) 
-  ```bash
-  function y = getFac(x)
-	x = input('Please enter an integer:')
-	if(x > 0)
+9)      function y = getFac(x)  
+	x = input('Please enter an integer:')  
+	if(x > 0)  
 	
-	y = x*(x-1)*
-  ```
+	y = x*(x-1)*  
 	
