@@ -14,7 +14,7 @@ y =
 ans =
     0.1760
 ```
-``bash
+```bash
 >> normpdf(1,0,2)
 ans =
     0.1760
