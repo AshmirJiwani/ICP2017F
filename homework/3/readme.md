@@ -40,6 +40,7 @@ t =
 ans =
   396.5763
 ```
+When an egg is cooked from room temperature:  
 ```bash
 function t = cookedegg(m,M,p,c,K,Tw,To,Ty)
 m = 47;
