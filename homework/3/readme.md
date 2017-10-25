@@ -19,3 +19,4 @@ ans =
 ans =
     0.1760
 ```
+Question 2)  
