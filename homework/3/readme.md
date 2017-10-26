@@ -61,3 +61,25 @@ t =
 ans =
   315.2179
 ```
+Question 3)  
+Converting Cartesian Coordinates to Polar Coordinates:  
+```bash
+function PolarStruct = getPolar(CartStruct)
+CartStruct.x = input('What value of x would you like? ');
+CartStruct.y = input('What value of y would you like? ');
+PolarStruct.r = sqrt(CartStruct.x^2 + CartStruct.y^2);
+PolarStruct.phi = radtodeg(acos(CartStruct.x/PolarStruct.r));
+% input an x and y otherwise there will be an error
+end
+```
+```bash
+>> getPolar
+What value of x would you like? 1
+What value of y would you like? 2
+ans = 
+  struct with fields:
+
+      r: 2.2361
+    phi: 63.4349
+```
+Converting Polar Coordinates to Cartesian Coordinates:  
