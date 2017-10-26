@@ -83,3 +83,22 @@ ans =
     phi: 63.4349
 ```
 Converting Polar Coordinates to Cartesian Coordinates:  
+```bash
+function CartStruct = getCart(PolarStruct)
+PolarStruct.r = input('What value of r would you like? ');
+PolarStruct.phi = input('What value of phi would you like? ');
+CartStruct.x = (PolarStruct.r)*cos(degtorad(PolarStruct.phi));
+CartStruct.y = (PolarStruct.r)*sin(degtorad(PolarStruct.phi));
+% input an r and phi otherwise there will be an error
+end
+```
+```bash
+>> getCart
+What value of r would you like? 2.2361
+What value of phi would you like? 63.4349
+ans = 
+  struct with fields:
+
+    x: 1.0000
+    y: 2.0000
+```
