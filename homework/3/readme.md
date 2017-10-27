@@ -124,6 +124,49 @@ end
 Input directory name: Downloads
 The total size of the directory is 2354545013 bytes
 ```
+Question 5)  
+```bash
+function fib()
+x = input('Please enter a non-negative integer or type stop: ','s');
+a = str2double(x);
+function y = getFib(n_int) 
+    if(n_int == 0)
+        y = 0;
+    elseif(n_int == 1)
+        y = 1;
+    else
+        y = getFib(n_int - 1) + getFib(n_int - 2);
+        return;
+    end
+end
+
+if(strcmp(x,'stop'))
+    return;
+elseif(isscalar(a) && isreal(a) && (a >= 0) && a == round(a))
+    disp(['fib(', num2str(x), ') = ', num2str(getFib(a))]);
+    fib();
+else
+    disp('The input argument is not a non-negative number!');
+    fib();
+end
+end
+```
+```bash
+>> fib
+Please enter a non-negative integer or type stop: a
+The input argument is not a non-negative number!
+Please enter a non-negative integer or type stop: amir
+The input argument is not a non-negative number!
+Please enter a non-negative integer or type stop: -10
+The input argument is not a non-negative number!
+Please enter a non-negative integer or type stop: 1
+fib(1) = 1
+Please enter a non-negative integer or type stop: 6
+fib(6) = 8
+Please enter a non-negative integer or type stop: 12
+fib(12) = 144
+Please enter a non-negative integer or type stop: stop
+```
 Question 6)  
 ```bash
 function Area = getTriangleArea(vertices)
