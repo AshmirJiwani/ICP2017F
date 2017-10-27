@@ -102,3 +102,24 @@ ans =
     x: 1.0000
     y: 2.0000
 ```
+Question 4)  
+```bash
+function bytes = getSize(mydir)
+bytes = sum([mydir.bytes]);
+end
+```
+```bash
+mydir = input('Input directory name: ', 's');
+if 7==exist(mydir,'dir');
+    mydir = dir;
+    Tot_size = getSize(mydir);
+    disp(['The total size of the directory is ',num2str(Tot_size), + ' bytes']);
+else
+    disp('The file does not exist.');
+end
+```
+```bash
+>> Untitled4
+Input directory name: Downloads
+The total size of the directory is 2354545013 bytes
+```
