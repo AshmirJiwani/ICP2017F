@@ -19,7 +19,8 @@ ans =
 ans =
     0.1760
 ```
-Question 2) The function when a large egg is taken out from a fridge:  
+Question 2)  
+The function when a large egg is taken out from a fridge:  
 ```bash
 function t = cookedegg(m,M,p,c,K,Tw,To,Ty)
 m = 47;
