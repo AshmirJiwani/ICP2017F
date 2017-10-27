@@ -123,3 +123,26 @@ end
 Input directory name: Downloads
 The total size of the directory is 2354545013 bytes
 ```
+Question 6)  
+```bash
+function Area = getTriangleArea(vertices)
+x1 = vertices(1);
+y1 = vertices(2);
+x2 = vertices(3);
+y2 = vertices(4);
+x3 = vertices(5);
+y3 = vertices(6);
+abs_value = abs((x2*y3)-(x3*y2)-(x1*y3)+(x3*y1)+(x1*y2)-(x2*y1)); 
+Area = (0.5)*abs_value;
+end
+```
+```bash
+vertices = input('Enter 3 vertices counter-clockwise: ');
+a = getTriangleArea(vertices);
+disp(a);
+```
+```bash
+>> Untitled5
+Enter 3 vertices counter-clockwise: [12,0,6,6,0,0]
+    36
+```
