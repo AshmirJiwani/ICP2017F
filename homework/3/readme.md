@@ -178,3 +178,50 @@ ans =
   logical
    0
 ```
+Question 8)  
+```bash
+function [G] = genFunc(varargin)
+    switch nargin
+        case 0 
+            a = 0;
+            b = 0;
+            c = 0;
+        case 1
+            a = varargin{1};
+            b = 0;
+            c = 0;
+        case 2
+            a = varargin{1};
+            b = varargin{2};
+            c = 0;
+        case 3
+            a = varargin{1};
+            b = varargin{2};
+            c = varargin{3};
+        otherwise 
+            error('Too many arguments');
+            return
+    end
+
+
+function [y] = evalFunc(x)
+    y = a*x.^2 + b*x + c;
+end
+
+G = @evalFunc
+
+end
+```
+```bash
+>> q1 = genFunc(1,2,3)
+G =
+  function_handle with value:
+    @genFunc/evalFunc
+q1 =
+  function_handle with value:
+    @genFunc/evalFunc
+>> q1(2)
+ans =
+    11
+>> 
+```
