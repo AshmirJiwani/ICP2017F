@@ -147,3 +147,34 @@ disp(a);
 Enter 3 vertices counter-clockwise: [12,0,6,6,0,0]
     36
 ```
+Question 7)  
+```bash
+function outLogical = isPrime(n) %fix
+divisor = 2;
+outLogical = true;
+sqrt_n = round(sqrt(n)); 
+outLogical = isDivisable(n,divisor);
+
+    function output = isDivisable(n,divisor)
+        if(mod(n,divisor) == 0)
+            output = false;
+        elseif(sqrt_n < divisor)
+            output = true;
+            return
+        else
+            divisor = divisor + 1;
+            output = isDivisable(n,divisor);
+        end
+    end
+end
+```
+```bash
+>> isPrime(23)
+ans =
+  logical
+   1
+>> isPrime(12)
+ans =
+  logical
+   0
+```
