@@ -121,8 +121,8 @@ end
 ```
 ```bash
 >> Untitled4
-Input directory name: Downloads
-The total size of the directory is 2354545013 bytes
+Input directory name: ..
+The total size of the directory is 2354548960 bytes
 ```
 Question 5)  
 ```bash
