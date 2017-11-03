@@ -1,6 +1,22 @@
 Homework 4 answers  
 6)  
 ```bash
+function getLargestPrime(n)
+    for i = n:-1:2
+        if(isprime(i) == 1)
+            disp(i);
+            break
+        end
+    end
+end
+```
+```bash
+>> getLargestPrime(123)
+   113
+
+```
+6)  
+```bash
 function fib()
 
     n = input('Please enter a non-negative integer or type stop: ','s');
