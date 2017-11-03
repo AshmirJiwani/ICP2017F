@@ -1,4 +1,19 @@
 Homework 4 answers  
+3)  
+```bash
+List = { {'M','A','T','L','A','B'}, {' '}, {'i','s'}, {' '}, {'a'}, {' '}, {'s','t','r','a','n','g','e'}, {', '}, {'b','u','t',' '}, {'p','o','p','u','l','a','r'}, {' '}, {'p','r','o','g','r','a','m','m','i','n','g',' ','l','a','n','g','u','a','g','e'} };
+str = '';
+for i= 1:length(List) 
+    for a = 1:length(List{i})
+        str = [str,List{i}{a}];
+    end 
+end
+disp(str);
+```
+```bash
+>> extractLetter
+MATLAB is a strange, but popular programming language
+```
 6)  
 ```bash
 function getLargestPrime(n)
