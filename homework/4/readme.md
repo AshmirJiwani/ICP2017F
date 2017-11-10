@@ -90,6 +90,9 @@ disp(str);
 >> extractLetter
 MATLAB is a strange, but popular programming language
 ```
+4)  
+The program takes the square root of 2.0 60 times and squares it again.  
+There is a roundoff error and MATLAB cuts off a number at the 16th digit so you do not get 2.0 after the entire code has run.
 6)  
 ```bash
 function getLargestPrime(n)
