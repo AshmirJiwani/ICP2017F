@@ -245,3 +245,81 @@ running too fast. Try measuring something that takes longer.
 average runtime: 3.0957e-06seconds
 Please enter a non-negative integer or type stop: stop
 ```
+8)  
+A)
+```bash
+function Output = timeFib(n)
+if ~ischar(n) && isreal(n) && n>=0 && round(n)==n
+    Output.n = n;
+    Output.fib = getFib(n);
+    Output.runtime = timeit( @()getFib(n) );
+else
+    disp('The input argument is not a non-negative interger!');
+end
+
+    function fib = getFib(n_int)
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = getFib(n_int-1) + getFib(n_int-2);
+        end
+    end
+
+end
+```
+```bash
+function Output = timeFibLoop(n)
+if ~ischar(n) && isreal(n) && n>=0 && round(n)==n
+    Output.n = n;
+    Output.fib = getFib(n);
+    Output.runtime = timeit( @()getFib(n) );
+else
+    disp('The input argument is not a non-negative integer');
+end
+
+    function fib = getFib(n_int) 
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = 1;
+            fibOld1 = 0; 
+            temp=0;
+            for a = 1:n_int-1 
+                temp=fib;
+                fib = fib+ fibOld1; 
+                fibOld1=temp;
+            end
+        end
+    end
+end
+```
+```bash
+>> timeFib(20)
+ans = 
+  struct with fields:
+
+          n: 20
+        fib: 6765
+    runtime: 6.9213e-04
+>> timeFib('amir')
+Error using timeFib (line 7)
+The input argument is not a non-negative interger! 
+>> timeFibLoop(20)
+Warning: The measured time for F may be inaccurate because it is running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In timeFibLoop (line 5) 
+ans = 
+  struct with fields:
+
+          n: 20
+        fib: 6765
+    runtime: 3.0195e-06
+>> timeFibLoop('amir')
+Error using timeFibLoop (line 7)
+The input argument is not a non-negative integer 
+>> 
+```
