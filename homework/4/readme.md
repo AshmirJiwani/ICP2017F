@@ -88,6 +88,7 @@ end
 
 ```
 7)  
+A)  
 ```bash
 function fib()
 
@@ -140,5 +141,107 @@ average runtime: 0.097022seconds
 Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 average runtime: 1.1576seconds
+Please enter a non-negative integer or type stop: stop
+```
+B & C)  
+```bash
+function fibLoop()
+
+    n = input('Please enter a non-negative integer or type stop: ','s');
+    if strcmp(n,'stop')
+        return
+    else
+        n = str2double(n);
+        if isreal(n)
+            if n>=0 && round(n)==n
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                disp(['average runtime: ', num2str(timeit( @()getFib(n) )), 'seconds']);
+                fibLoop()
+                return
+            end
+        end
+        disp('The input argument is not a non-negative integer!');
+        fibLoop()
+    end
+    
+    function fib = getFib(n_int) %n_int=3
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = 1;
+            fibOld1 = 0;
+            %fibOld2 = 1; 
+            temp=0;
+            for a = 1:n_int-1 %(for a = 1:2)
+                temp=fib;
+                fib = fib+ fibOld1; %(fib(3) = fib(2) + fib(1))
+                fibOld1=temp;
+            end
+        end
+    end
+
+end
+```
+```bash
+>> fibLoop
+Please enter a non-negative integer or type stop: 10
+fib(10) = 55
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11) 
+average runtime: 2.4426e-06seconds
+Please enter a non-negative integer or type stop: 15
+fib(15) = 610
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11)
+  In fibLoop (line 12) 
+average runtime: 1.3222e-06seconds
+Please enter a non-negative integer or type stop: 20
+fib(20) = 6765
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11)
+  In fibLoop (line 12)
+  In fibLoop (line 12) 
+average runtime: 1.4208e-06seconds
+Please enter a non-negative integer or type stop: 25
+fib(25) = 75025
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12) 
+average runtime: 1.4918e-06seconds
+Please enter a non-negative integer or type stop: 30
+fib(30) = 832040
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12) 
+average runtime: 1.8064e-06seconds
+Please enter a non-negative integer or type stop: 35
+fib(35) = 9227465
+Warning: The measured time for F may be inaccurate because it is
+running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12)
+  In fibLoop (line 12) 
+average runtime: 3.0957e-06seconds
 Please enter a non-negative integer or type stop: stop
 ```
