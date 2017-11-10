@@ -1,4 +1,61 @@
 Homework 4 answers  
+1)  
+```bash
+function convertTempFor(InVec,str)
+    ANS = zeros(1,length(InVec));
+    if strcmp(str,'C2F')
+       for i = 1:length(InVec)
+          ANS(i) = InVec(i).*1.8 + 32;
+       end
+    elseif strcmp(str,'F2C')
+       for i = 1:length(InVec)
+          ANS(i) = (InVec(i)-32).*(5/9);
+       end
+    end
+     disp(ANS);
+end
+```
+```bash
+function convertTempWhile(InVec,str)
+    ANS = zeros(1,length(InVec));
+    if strcmp(str,'C2F')
+       i = 1;
+       while i <= length(InVec)
+           ANS(i) = InVec(i).*1.8 + 32;
+           i = i + 1;
+       end
+    elseif strcmp(str,'F2C')
+       i = 1;
+       while i <= length(InVec)
+          ANS(i) = (InVec(i)-32).*(5/9);
+       end
+    end
+     disp(ANS);
+end
+```
+```bash
+function convertTempVec(InVec,str)
+    if strcmp(str,'C2F')
+           ANS = zeros(1,length(InVec));
+           ANS = (InVec).*1.8 + 32;
+           disp(ANS);
+    elseif strcmp(str,'F2C')
+           ANS = zeros(1,length(InVec));
+           ANS = ((InVec)-32).*(5/9);
+           disp(ANS);
+    end
+end
+```
+```bash
+>> convertTempFor([-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40],'C2F')
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+>> convertTempWhile([-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40],'C2F')
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+>> convertTempVec([-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40],'C2F')
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+```
 3)  
 ```bash
 List = { {'M','A','T','L','A','B'}, {' '}, {'i','s'}, {' '}, {'a'}, {' '}, {'s','t','r','a','n','g','e'}, {', '}, {'b','u','t',' '}, {'p','o','p','u','l','a','r'}, {' '}, {'p','r','o','g','r','a','m','m','i','n','g',' ','l','a','n','g','u','a','g','e'} };
@@ -30,7 +87,7 @@ end
    113
 
 ```
-6)  
+7)  
 ```bash
 function fib()
 
