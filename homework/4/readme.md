@@ -323,3 +323,28 @@ Error using timeFibLoop (line 7)
 The input argument is not a non-negative integer 
 >> 
 ```
+B)  
+```bash
+N = 1:35
+Nlen = length(N)
+
+if exist('fibOutput.txt','file') && exist('fibLoopOutput.txt','file')
+    for i = 1:Nlen
+        disp(['gettingFib(',num2str(N(i))],')');
+        OutputTimeFib(i) = timeFib(N(i));
+        OutputTimeFibLoop(i) = timeFibLoop(N(i));
+    end
+    writetable(struct2table(OutTimeFib),'fibOutput.txt')
+    writetable(struct2table(OutTimeFibLoop),'fibLoopOutput.txt')
+end
+```
+```bash
+>> writeFibResult
+N =
+  Columns 1 through 30
+     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30
+  Columns 31 through 35
+    31    32    33    34    35
+Nlen =
+    35
+```
