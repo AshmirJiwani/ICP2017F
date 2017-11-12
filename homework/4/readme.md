@@ -93,6 +93,8 @@ MATLAB is a strange, but popular programming language
 4)  
 The program takes the square root of 2.0 60 times and squares it again.  
 There is a roundoff error and MATLAB cuts off a number at the 16th digit so you do not get 2.0 after the entire code has run.
+5)  
+The highest precision for MATLAB is 16 digits after the decimal. The code in this question divides 1 by 2 a multitude of times until the answer is bascially 0 in MATLAB. The final value for eps before 0 would be 1.1102e-16 and dividing this value by 2 will result in a value that has e-17 which is not recognizable in MATLAB as 1 thereofe 1.0~=1.0 + eps results in false.
 6)  
 ```bash
 function getLargestPrime(n)
@@ -265,6 +267,68 @@ running too fast. Try measuring something that takes longer.
   In fibLoop (line 12)
   In fibLoop (line 12) 
 average runtime: 3.0957e-06seconds
+Please enter a non-negative integer or type stop: stop
+```
+7B Bonus)  
+```bash
+function fibLoopvectorized()
+
+    n = input('Please enter a non-negative integer or type stop: ','s');
+    if strcmp(n,'stop')
+        return
+    else
+        n = str2double(n);
+        if isreal(n)
+            if n>=0 && round(n)==n
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                disp(['average runtime: ', num2str(timeit( @()getFib(n) )), 'seconds']);
+                fibLoopvectorized()
+                return
+            end
+        end
+        disp('The input argument is not a non-negative integer!');
+        fibLoopvectorized()
+    end
+    
+    function fib = getFib(n_int) 
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            FibSeq = zeros(n_int+1,1);
+            FibSeq(1) = 0;
+            FibSeq(2) = 1;
+            %fibOlder = 0;
+            %fibOld = 1; 
+            for a = 3:n_int+1
+                %fib = fibOld;
+                %fib = fib+ fibOlder;
+                %fibOlder = fibOld;
+                %fibOld = fib;
+                FibSeq(a) = FibSeq(a-1) + FibSeq(a-2);
+            end
+            fib = FibSeq(end);
+        end
+    end
+end
+```
+```bash
+>> fibLoop
+Please enter a non-negative integer or type stop: 300
+fib(300) = 2.222322446294203e+62
+Warning: The measured time for F may be inaccurate because it is running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoop (line 11) 
+average runtime: 2.8284e-06seconds
+Please enter a non-negative integer or type stop: stop
+>> fibLoopvectorized()
+Please enter a non-negative integer or type stop: 300
+fib(300) = 2.222322446294203e+62
+Warning: The measured time for F may be inaccurate because it is running too fast. Try measuring something that takes longer. 
+> In timeit (line 158)
+  In fibLoopvectorized (line 11) 
+average runtime: 5.2535e-06seconds
 Please enter a non-negative integer or type stop: stop
 ```
 8)  
