@@ -94,7 +94,9 @@ MATLAB is a strange, but popular programming language
 The program takes the square root of 2.0 60 times and squares it again.  
 There is a roundoff error and MATLAB cuts off a number at the 16th digit so you do not get 2.0 after the entire code has run.  
 5)  
+  
 The highest precision for MATLAB is 16 digits after the decimal. The code in this question divides 1 by 2 a multitude of times until the answer is bascially 0 in MATLAB. The final value for eps before 0 would be 1.1102e-16 and dividing this value by 2 will result in a value that has e-17 which is not recognizable in MATLAB as 1 thereofe 1.0~=1.0 + eps results in false.  
+  
 6)  
 ```bash
 function getLargestPrime(n)
