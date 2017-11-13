@@ -28,6 +28,7 @@ function convertTempWhile(InVec,str)
        i = 1;
        while i <= length(InVec)
           ANS(i) = (InVec(i)-32).*(5/9);
+          i = i + 1;
        end
     end
      disp(ANS);
