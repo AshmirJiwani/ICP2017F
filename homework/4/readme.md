@@ -199,11 +199,10 @@ function fibLoop()
         else
             fib = 1;
             fibOld1 = 0;
-            %fibOld2 = 1; 
             temp=0;
-            for a = 1:n_int-1 %(for a = 1:2)
+            for a = 1:n_int-1 
                 temp=fib;
-                fib = fib+ fibOld1; %(fib(3) = fib(2) + fib(1))
+                fib = fib+ fibOld1; 
                 fibOld1=temp;
             end
         end
