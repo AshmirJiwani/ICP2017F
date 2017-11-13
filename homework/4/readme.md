@@ -271,7 +271,7 @@ running too fast. Try measuring something that takes longer.
 average runtime: 3.0957e-06seconds
 Please enter a non-negative integer or type stop: stop
 ```
-The function fibLoop() is tremendously faster. There is a huge difference because for loops are optimizable and contain a simple test conditional jump while recursive functions are rather complex. In addition, recursion basically works against optimization in CPU's. 
+The function fibLoop() is tremendously faster. There is a huge difference because for loops are optimizable and contain a simple test conditional jump while recursive functions are rather complex. In addition, recursion basically works against optimization in CPU's.  
 7B Bonus)  
 ```bash
 function fibLoopvectorized()
