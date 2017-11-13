@@ -1,4 +1,4 @@
-Quiz 3)  
+Quiz 4)  
 1)  
 ```bash
 function getFacWhile(n)
