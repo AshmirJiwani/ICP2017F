@@ -57,4 +57,25 @@ The winning percentage due to switching is 0.6592
 ```
 4)  
 ```bash
+ntotal = [1000 2000 3000 4000 5000 6000 7000 8000 9000 10000];
+pi = zeros(1,10);
+for j = 1:10
+    x = rand(1,ntotal(j));
+    y = rand(1,ntotal(j));
+    counter = 0;
+for i = 1:ntotal(j)
+   if x(i)^2 + y(i)^2 <= 1
+       counter = counter + 1;
+   end
+end
+pi(j) = (4*counter)/ntotal(j);
+end
+disp(pi);
+
+plot(ntotal,pi);
+axis([0 10000 0 3.5])
+```
+```bash
+>> montelhallapprox2
+    3.1160    3.1420    3.1480    3.1450    3.1632    3.1287    3.1503    3.1595    3.1444    3.0964
 ```
