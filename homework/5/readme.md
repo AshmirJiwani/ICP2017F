@@ -1,6 +1,26 @@
 Homework 5 Answers  
 1)  
 ```bash
+function output = RandomGroupsof3()
+rng(131313);
+triples = randperm(99);
+fileID = fopen('students.csv');
+mytable = readtable('students.csv');
+output = cell(33,3);
+r = 1;
+c = 1;
+for i = 1:99
+    output{r,c} = cell2mat(mytable{triples(i),2});
+    if(r == 33)
+        r = 1;
+        c = c + 1;
+    else
+        r = r + 1;
+    end
+end
+fclose(fileID);
+xlswrite('groups.xlsx',output);
+end
 ```
 2)  
 ```bash
