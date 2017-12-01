@@ -1,16 +1,16 @@
 Quiz 5 answers)  
-1) ```bash
+1) 
     chainData = importdata('chain.txt'); 
-dataArray = chainData.data; 
-y = dataArray(:,4); 
-x = linspace(10^0,10^5,length(dataArray)); 
-plot(x,y,'-r','LineWidth',2); 
-xlim([10^0 10^6]); 
-box on; 
-set(gca,'xscale','log');
-xlabel('Sample Number');
-ylabel('Growth Rate');
-   ```
+    dataArray = chainData.data; 
+    y = dataArray(:,4); 
+    x = linspace(10^0,10^5,length(dataArray)); 
+    plot(x,y,'-r','LineWidth',2); 
+    xlim([10^0 10^6]); 
+    box on; 
+    set(gca,'xscale','log');
+    xlabel('Sample Number');
+    ylabel('Growth Rate');
+
 2)  
 ```bash
     function result = robustWebRead(inputstr)
