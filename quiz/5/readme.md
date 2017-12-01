@@ -27,4 +27,3 @@ Quiz 5 answers)
  3) gca and gcf are both used in the set() function in MATLAB but gca will refer to the current axis of the figure.  
 gca will allow you to set the scale of the axexs.  
 gcf refers to the current figure or graph. This will allow you to refer to the graph and save it or even scale the entire graph with the same result of using gca.
-```
