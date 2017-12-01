@@ -1,5 +1,6 @@
 Quiz 5 answers)  
 1) 
+```bash
     chainData = importdata('chain.txt'); 
     dataArray = chainData.data; 
     y = dataArray(:,4); 
@@ -10,6 +11,7 @@ Quiz 5 answers)
     set(gca,'xscale','log');
     xlabel('Sample Number');
     ylabel('Growth Rate');
+ ```
 
 2)  
 ```bash
