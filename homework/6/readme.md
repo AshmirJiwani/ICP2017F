@@ -1,5 +1,5 @@
 Homework 6 Answers:  
-1) 
+1)
 ```bash
 clear all;
 close all;
@@ -102,6 +102,10 @@ end
     cbar.FontSize = colorbarFontSize; % set the fontsize of the colorbar
 
 saveas(gcf,'currentPlot.png'); % save the figure
+```
+2)  
+```bash
+
 ```
 3)
 ```bash
