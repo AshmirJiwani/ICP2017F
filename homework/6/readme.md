@@ -1,7 +1,6 @@
 Homework 6 Answers:  
-1)
-  
-2)
+1)   
+3)
 ```bash
 function totalLogProb = getTotalLogProb(Param)
     global data nsample 
