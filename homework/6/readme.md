@@ -1,5 +1,6 @@
 Homework 6 Answers:  
 1)
+  
 2)
 ```bash
 function totalLogProb = getTotalLogProb(Param)
