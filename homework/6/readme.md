@@ -84,7 +84,7 @@ end
     colorbarPositionX = 1 - mainPlotMarginRight; % the x-position of the color bar
     colorbarPositionY = mainPlotMarginBottom; % the y-position of the color bar
     colorbarWidth = 0.03; % the width of the color bar
-    colorbarHeight = 1 - 2*colorbarPositionY; % the height of the color bar
+    colorbarHeight = 1 - 1.75*colorbarPositionY; % the height of the color bar
     colorbarFontSize = 13; % the font size of the color bar
     colorLimits = [0,max(max(max(data(:,:,:))))]; % the color bar limits, the dataset contains numbers between 0 and some large number.
 
