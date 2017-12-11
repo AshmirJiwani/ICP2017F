@@ -103,6 +103,7 @@ end
 saveas(gcf,'currentPlot.png'); % save the figure
 ```
 2)  
+This part of the code is specific to part 2 of the homework. Everything between the two comments is new code to draw the boundaries. 
 ```bash
     imagesc(data(:,:,sliceNumber), [0,40000]); % This line of the code is from part 1 of the homework. Everything from here to the next     comment is new code added to part 2.  
     zslice = data(:,:,sliceNumber);
