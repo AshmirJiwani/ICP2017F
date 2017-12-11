@@ -58,7 +58,6 @@ sliceNumber = 0;
 for irow = nrow:-1:1
     for icol = 1:ncol
         sliceNumber = sliceNumber + 1;
-        %title(['z = ', num2str()])
         subplot = axes( 'position' ...
                      , [ ...
                         mainPlotMarginLeft + (icol-1)*(subplotWidth+subplotInterspace) 
@@ -105,7 +104,17 @@ saveas(gcf,'currentPlot.png'); % save the figure
 ```
 2)  
 ```bash
-
+    imagesc(data(:,:,sliceNumber), [0,40000]); % This line of the code is from part 1 of the homework. Everything from here to the next     comment is new code added to part 2.  
+    zslice = data(:,:,sliceNumber);
+    imagesc(zslice, [0, 40000]);
+    BW = imbinarize(zslice);
+    objects = bwboundaries(BW,'noholes'); %delineate boundary
+    hold on;
+    for j = 1:length(objects)
+        contour = objects{j};
+        plot(contour(:,2), contour(:,1), 'r', 'LineWidth', 4); %generate figure with highlighted boundary
+    end
+    hold on; %Everything before this line and after the previous comment is new code.
 ```
 3)
 ```bash
